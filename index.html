@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="https://konradKG25.github.io/profile.png">
     <title>KonradKG25's Website</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
@@ -16,7 +15,7 @@
 </head>
 <body>
     <header>
-        <div style="height: 150px;"></div> <!-- Space for your image -->
+        <div id="profileImage"></div>
         KonradKG25
     </header>
 
@@ -34,5 +33,9 @@
             <p><a href="mod_download_link">Download</a></p>
         </div>
     </div>
+
+    <script>
+        document.getElementById("profileImage").innerHTML = marked("![ProfilePic](profile.png)");
+    </script>
 </body>
 </html>
